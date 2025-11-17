@@ -45,4 +45,13 @@
     "datasheet_ref": "datasheets/rectifiers/Enedo-OPUS-MHE24-1500.pdf",
     "status": "acceptable"
   }
+  {
+  "brand": "Alpha",
+  "family": "Cordex",
+  "model": "CXRM-1.1kW-48",
+  "datasheet_ref": "datasheets/rectifiers/Alpha-Cordex-1100W-48V.pdf",
+  "datasheet_url": "https://www.eltek.com/cordex-1100w-48v",
+  "status": "preferred"
+}
+
 ]
