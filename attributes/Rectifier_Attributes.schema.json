@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Rectifier Attributes Schema",
+  "type": "object",
+  "properties": {
+    "brand": { "type": "string" },
+    "family": { "type": "string" },
+    "model": { "type": "string" },
+    "voltage_nominal": { "type": "number" },
+    "voltage_min": { "type": "number" },
+    "voltage_max": { "type": "number" },
+    "current_max": { "type": "number" },
+    "power_kW": { "type": "number" },
+    "input_voltage_min": { "type": "number" },
+    "input_voltage_max": { "type": "number" },
+    "input_phases": { "type": "string" },
+    "rack_height_RU": { "type": "number" },
+    "efficiency_percent": { "type": "number" },
+    "operating_temp_min": { "type": "number" },
+    "operating_temp_max": { "type": "number" },
+    "ip_rating": { "type": "string" },
+    "compatible_shelves": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "compatible_controllers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "preferred_battery_chemistries": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "datasheet_ref": { "type": "string" },
+    "status": { "type": "string", "enum": ["preferred", "acceptable", "legacy", "blocked"] }
+  },
+  "required": ["brand", "family", "model", "voltage_nominal", "current_max", "status"]
+}
